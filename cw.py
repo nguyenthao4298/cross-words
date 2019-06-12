@@ -161,7 +161,7 @@ class Demo(Frame):
                 right = col * self.sqsize + self.sqsize
             boxchoosed = cas.create_rectangle(left, top, right, bottom, outline='red', width=3)
             if check_choosed() == 5:
-                messagebox.showerror("Victory!", "You won!")
+                messagebox.showinfo("Victory!", "You won!")
             if self.check[number] == '0':
                 recognizer = sr.Recognizer()
                 microphone = sr.Microphone()
